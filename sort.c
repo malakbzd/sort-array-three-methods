@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<time.h>
 
+//insertion_way
 void insertion(int t[4])
 {
     int i,j,x,c=0,s=0;
@@ -17,7 +17,7 @@ void insertion(int t[4])
         t[j]=x;
     }
 }
-
+//quick_way
 int partition(int t[4] , int d , int f)
 {
     int i,j,p,x;
@@ -50,7 +50,7 @@ void part_r(int t[4] , int d , int f)
     }
 }
 
-
+//merge_way
  void fusion(int t[4] , int d , int f)
  {
     int i,j,k=0,a[f-d+1];
@@ -104,7 +104,7 @@ fus_tre(t,m+1,f);
 fusion(t,d,f);
     }
   }
-
+//display
 void display(int t[4])
 {
     printf("\n");
